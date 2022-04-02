@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('de8d372aaece755b8c75e290a4df92d2');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '100,100원을 받으세요',
+        description: '송금 받기 전까지 내역 상세화면에서 취소할 수 있어요.',
+        imageUrl:
+          'https://postfiles.pstatic.net/MjAyMjA0MDJfMTQ2/MDAxNjQ4ODgzNDYxODg2.rSyint91PRxfbexea6_F6MPHG4t7nc6t9pOpsS2C76sg.fEcWdvZZSz0KikcKn7YIzJtqJFn587PiKmu7P7UY3nog.PNG.elrhyme080/%EC%86%A1%EA%B8%88_%EB%82%9A%EC%8B%9C.png?type=w966',
+        link: {
+          mobileWebUrl: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA3MTZfMjI0%2FMDAxNTMxNzA3MTczNjU5.noCgwMlEQScrkZOl0PHBNWTs7z0j529Nyd8f8xRvMUkg.crV2hRxNAFSu9Yhkb_ptTLtu71FQRerq7372mL8E4DAg.JPEG.hyejin9494%2FIMG_4241097995489.jpeg&type=sc960_832',
+          webUrl: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA3MTZfMjI0%2FMDAxNTMxNzA3MTczNjU5.noCgwMlEQScrkZOl0PHBNWTs7z0j529Nyd8f8xRvMUkg.crV2hRxNAFSu9Yhkb_ptTLtu71FQRerq7372mL8E4DAg.JPEG.hyejin9494%2FIMG_4241097995489.jpeg&type=sc960_832',
+        },
+      },
+
+      buttons: [
+        {
+          title: '받기',
+          link: {
+            mobileWebUrl: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA3MTZfMjI0%2FMDAxNTMxNzA3MTczNjU5.noCgwMlEQScrkZOl0PHBNWTs7z0j529Nyd8f8xRvMUkg.crV2hRxNAFSu9Yhkb_ptTLtu71FQRerq7372mL8E4DAg.JPEG.hyejin9494%2FIMG_4241097995489.jpeg&type=sc960_832',
+            webUrl: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA3MTZfMjI0%2FMDAxNTMxNzA3MTczNjU5.noCgwMlEQScrkZOl0PHBNWTs7z0j529Nyd8f8xRvMUkg.crV2hRxNAFSu9Yhkb_ptTLtu71FQRerq7372mL8E4DAg.JPEG.hyejin9494%2FIMG_4241097995489.jpeg&type=sc960_832',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+  </body>
+</html>
